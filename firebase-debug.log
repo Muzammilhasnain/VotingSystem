@@ -1,0 +1,286 @@
+[debug] [2022-01-26T21:56:45.482Z] ----------------------------------------------------------------------
+[debug] [2022-01-26T21:56:45.485Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-26T21:56:45.486Z] CLI Version:   10.1.2
+[debug] [2022-01-26T21:56:45.486Z] Platform:      win32
+[debug] [2022-01-26T21:56:45.486Z] Node Version:  v14.18.1
+[debug] [2022-01-26T21:56:45.488Z] Time:          Wed Jan 26 2022 13:56:45 GMT-0800 (Pacific Standard Time)
+[debug] [2022-01-26T21:56:45.488Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-26T21:56:45.583Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-26T21:56:45.584Z] > authorizing via signed-in user (mk36904276@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\pro\VotingSystem
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-26T21:57:05.694Z] Using project from CLI flag: voting-system-25f69
+[debug] [2022-01-26T21:57:05.697Z] > refreshing access token with scopes: []
+[debug] [2022-01-26T21:57:05.698Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-26T21:57:06.218Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 26 Jan 2022 21:57:06 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-26T21:57:06.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 [none]
+[debug] [2022-01-26T21:57:06.896Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 403
+[debug] [2022-01-26T21:57:06.896Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-26T21:57:06.897Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-26T21:57:07.336Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project voting-system-25f69. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-26T21:58:28.183Z] ----------------------------------------------------------------------
+[debug] [2022-01-26T21:58:28.186Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-26T21:58:28.187Z] CLI Version:   10.1.2
+[debug] [2022-01-26T21:58:28.187Z] Platform:      win32
+[debug] [2022-01-26T21:58:28.187Z] Node Version:  v14.18.1
+[debug] [2022-01-26T21:58:28.188Z] Time:          Wed Jan 26 2022 13:58:28 GMT-0800 (Pacific Standard Time)
+[debug] [2022-01-26T21:58:28.189Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-26T21:58:28.274Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-26T21:58:28.275Z] > authorizing via signed-in user (mk36904276@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\pro\VotingSystem
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-26T21:58:38.508Z] Using project from CLI flag: voting-system-25f69
+[debug] [2022-01-26T21:58:38.512Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 [none]
+[debug] [2022-01-26T21:58:39.122Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 403
+[debug] [2022-01-26T21:58:39.122Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-26T21:58:39.123Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-26T21:58:39.528Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project voting-system-25f69. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-26T21:58:48.017Z] ----------------------------------------------------------------------
+[debug] [2022-01-26T21:58:48.020Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-26T21:58:48.020Z] CLI Version:   10.1.2
+[debug] [2022-01-26T21:58:48.020Z] Platform:      win32
+[debug] [2022-01-26T21:58:48.021Z] Node Version:  v14.18.1
+[debug] [2022-01-26T21:58:48.022Z] Time:          Wed Jan 26 2022 13:58:48 GMT-0800 (Pacific Standard Time)
+[debug] [2022-01-26T21:58:48.022Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-26T21:58:48.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-26T21:58:48.117Z] > authorizing via signed-in user (mk36904276@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\pro\VotingSystem
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-26T21:59:03.013Z] Using project from CLI flag: voting-system-25f69
+[debug] [2022-01-26T21:59:03.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 [none]
+[debug] [2022-01-26T21:59:03.713Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 403
+[debug] [2022-01-26T21:59:03.714Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-26T21:59:03.717Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-26T21:59:04.135Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project voting-system-25f69. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-26T22:08:19.980Z] ----------------------------------------------------------------------
+[debug] [2022-01-26T22:08:19.983Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-26T22:08:19.984Z] CLI Version:   10.1.2
+[debug] [2022-01-26T22:08:19.984Z] Platform:      win32
+[debug] [2022-01-26T22:08:19.984Z] Node Version:  v14.18.1
+[debug] [2022-01-26T22:08:19.986Z] Time:          Wed Jan 26 2022 14:08:19 GMT-0800 (Pacific Standard Time)
+[debug] [2022-01-26T22:08:19.986Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-26T22:08:20.086Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-26T22:08:20.093Z] > authorizing via signed-in user (mk36904276@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\pro\VotingSystem
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-26T22:08:26.504Z] Using project from CLI flag: voting-system-25f69
+[debug] [2022-01-26T22:08:26.510Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 [none]
+[debug] [2022-01-26T22:08:27.202Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 403
+[debug] [2022-01-26T22:08:27.203Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-26T22:08:27.205Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-26T22:08:27.670Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project voting-system-25f69. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-26T22:11:32.526Z] ----------------------------------------------------------------------
+[debug] [2022-01-26T22:11:32.529Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-26T22:11:32.530Z] CLI Version:   10.1.2
+[debug] [2022-01-26T22:11:32.530Z] Platform:      win32
+[debug] [2022-01-26T22:11:32.530Z] Node Version:  v14.18.1
+[debug] [2022-01-26T22:11:32.531Z] Time:          Wed Jan 26 2022 14:11:32 GMT-0800 (Pacific Standard Time)
+[debug] [2022-01-26T22:11:32.532Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-26T22:11:32.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-26T22:11:32.621Z] > authorizing via signed-in user (mk36904276@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\pro\VotingSystem
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-26T22:12:14.542Z] Using project from CLI flag: voting-system-25f69
+[debug] [2022-01-26T22:12:14.546Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 [none]
+[debug] [2022-01-26T22:12:15.193Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 403
+[debug] [2022-01-26T22:12:15.193Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-26T22:12:15.194Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-26T22:12:15.651Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project voting-system-25f69. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-26T22:16:00.653Z] ----------------------------------------------------------------------
+[debug] [2022-01-26T22:16:00.658Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-26T22:16:00.659Z] CLI Version:   10.1.2
+[debug] [2022-01-26T22:16:00.660Z] Platform:      win32
+[debug] [2022-01-26T22:16:00.660Z] Node Version:  v14.18.1
+[debug] [2022-01-26T22:16:00.662Z] Time:          Wed Jan 26 2022 14:16:00 GMT-0800 (Pacific Standard Time)
+[debug] [2022-01-26T22:16:00.662Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-26T22:16:00.757Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-26T22:16:00.757Z] > authorizing via signed-in user (mk36904276@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\pro\VotingSystem
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-26T22:16:09.152Z] Using project from CLI flag: voting-system-25f69
+[debug] [2022-01-26T22:16:09.156Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 [none]
+[debug] [2022-01-26T22:16:09.920Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 403
+[debug] [2022-01-26T22:16:09.920Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/voting-system-25f69 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-26T22:16:09.921Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-26T22:16:10.397Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project voting-system-25f69. Please make sure the project exists and your account has permission to access it.
